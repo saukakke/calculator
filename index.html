@@ -3,8 +3,8 @@
 <html>
 <head>
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <link rel="stylesheet" href="style.css"/>
-  <script defer src="handler.js"></script>
+  <link rel="stylesheet" href="styles/style.css"/>
+  <script defer src="scripts/handler.js"></script>
   <title>Practice</title>
 </head>
 <body>
@@ -12,9 +12,9 @@
     <textarea class="screen" rows="5" cols="5" placeholder="0" id="screen"></textarea>
     <div class="row">
       <button id="clear" type="button" onclick="clear()" class="btn">AC</button>
-      <button id="del" class="btn">Del</button>
-      <button id="unary" class="btn">+/-</button>
-      <button id="div" class="btn">/</button>
+      <button id="del" type="button" onclick="delet()" class="btn">Del</button>
+      <button id="unary" type="button" onclick="unary" class="btn">+/-</button>
+      <button id="div" onclick="div()" type="button" class="btn">/</button>
     </div>
     <div class="row">
       <button id="one" class="btn">1</button>
@@ -38,13 +38,20 @@
       <button id="mod" class="btn">%</button>
       <button id="zero" class="btn">0</button>
       <button id="dot" class="btn">.</button>
-      <button id="equal" class="btn">=</button>
+      <button id="equal" onclick="equal()" class="btn">=</button>
     </div>
   </div>
   <script>
   					function clear() {
   					  var textField = document.getElementById("screen");
   					  textField.setText();
+  					}
+  
+  function equal() {
+  					  var textField = document.getElementById("screen");
+  					  var value = textField.getText();
+    					var ans = eval(value);
+    textField.setText(ans+"");
   					}
   </script>
 </body>
