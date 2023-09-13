@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <script defer src="scripts/handler.js"></script>
+  <title>Practice</title>
+</head>
+<body>
+  <div class="calculator">
+    <textarea class="screen" rows="5" cols="5" placeholder="0" id="screen"></textarea>
+    <div class="row">
+      <button id="clear" type="button" onclick="clear()" class="btn">AC</button>
+      <button id="del" class="btn">Del</button>
+      <button id="unary" class="btn">+/-</button>
+      <button id="div" class="btn">/</button>
+    </div>
+    <div class="row">
+      <button id="one" class="btn">1</button>
+      <button id="two" class="btn">2</button>
+      <button id="three" class="btn">3</button>
+      <button id="plus" class="btn">+</button>
+    </div>
+    <div class="row">
+      <button id="four" class="btn">4</button>
+      <button id="five" class="btn">5</button>
+      <button id="six" class="btn">6</button>
+      <button id="sub" class="btn">-</button>
+    </div>
+    <div class="row">
+      <button id="seven" class="btn">7</button>
+      <button id="eight" class="btn">8</button>
+      <button id="nine" class="btn">9</button>
+      <button id="mul" class="btn">*</button>
+    </div>
+    <div class="row">
+      <button id="mod" class="btn">%</button>
+      <button id="zero" class="btn">0</button>
+      <button id="dot" class="btn">.</button>
+      <button id="equal" class="btn">=</button>
+    </div>
+  </div>
+  <script>
+  					function clear() {
+  					  var textField = document.getElementById("screen");
+  					  textField.setText();
+  					}
+  </script>
+</body>
+</html>
