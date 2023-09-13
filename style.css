@@ -1,0 +1,23 @@
+#screen {
+  width: 100%;
+  background: #bebebe;
+  resize: none;
+  border-radius: 5px;
+  text-indent: 10px;
+  color: white;
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.btn {
+  padding: 1rem;
+  font-weight: 500;
+  width: 70px;
+}
